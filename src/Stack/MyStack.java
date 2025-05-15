@@ -10,6 +10,7 @@ public class MyStack implements StackADT {
         list = new IntArrayList(20); // Limits the array to 20
     }
 
+
     // Pushes a value onto the stack if it's not full
     public void push(int value) {
         if (!isFull()) {
@@ -19,25 +20,30 @@ public class MyStack implements StackADT {
         }
     }
 
+
     // Pops the top value off the stack and returns it
     public int pop() {
         return list.delete();
     }
+
 
     // Checks whether the stack is empty
     public boolean isEmpty() {
         return list.isEmpty();
     }
 
+
     // Checks if the stack is full
     public boolean isFull() {
         return list.isFull();
     }
 
+
     // Returns the current number of elements in the stack
     public int size() {
         return list.getCount();
     }
+
 
     // Displays the contents of the stack from top to bottom
     public void display() {
